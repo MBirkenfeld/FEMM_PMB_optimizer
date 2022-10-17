@@ -1,0 +1,22 @@
+# ignored files
+*.png
+*.mat
+*.csv
+*.xlsx
+*.asv
+*.jpg
+*.txt
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+*.fig
