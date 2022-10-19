@@ -26,7 +26,6 @@ classdef Simulation_FEMM < handle
         end
         
         
-        % Einzelne Module zum Durchfuehren der Simulation
         function start_femm(obj, num, varargin)
            
             check_hidden = @(x) (x==0) || (x==1);
@@ -349,9 +348,9 @@ classdef Simulation_FEMM < handle
             % Because in a round bearing, the force in x-direction does not mach
             % the force as in two straight rows of magnets, ther has to be a
             % correction factor. The shown correction factor only corrects for
-            % the difference in correction. However also the distance between
-            % the two magnet rows is different which also has an effect on the
-            % force. However this effect was not accounted for. 
+            % the difference in direction. However the distance between
+            % the two magnet rows is different from axial to planar what 
+            % also has an effect on the forces. This effect was not accounted for. 
             
             if ~(isnumeric(r) && isscalar(r) && isnumeric(z) && isscalar(z))
                 error('z und r muessen EIN skalarer Wert sein')
